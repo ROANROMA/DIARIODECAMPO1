@@ -39,7 +39,7 @@
         android:layout_toEndOf="@+id/textView2"
         android:layout_marginLeft="29dp"
         android:layout_marginStart="29dp"
-        android:text="USUARIOS" />
+        android:text="USUARIO" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -58,7 +58,7 @@
         android:layout_alignBottom="@+id/textView3"
         android:layout_toRightOf="@+id/textView3"
         android:layout_toEndOf="@+id/textView3"
-        android:text="CONTRASEÑAS" />
+        android:text="CONTRASEÑA" />
 
     <Button
         android:layout_width="wrap_content"

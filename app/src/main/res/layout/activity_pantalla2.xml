@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="rodrigo.diariodecampo.PANTALLA1">
+    tools:context="rodrigo.diariodecampo.PANTALLA2">
 
     <TextView
         android:layout_width="fill_parent"
@@ -25,8 +25,9 @@
         android:inputType="date"
         android:ems="10"
         android:id="@+id/editText3"
-        android:layout_alignBottom="@+id/textView4"
-        android:layout_toRightOf="@+id/textView6" />
+        android:layout_above="@+id/textView5"
+        android:layout_toRightOf="@+id/textView13"
+        android:layout_toEndOf="@+id/textView13" />
 
     <TextClock
         android:layout_width="wrap_content"
@@ -47,27 +48,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="PROYECTO"
-        android:id="@+id/textView6"
-        android:layout_alignTop="@+id/PROYECTO"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <Spinner
-        android:layout_width="fill_parent"
-        android:layout_height="30dp"
-        android:id="@+id/PROYECTO"
-        android:layout_marginTop="36dp"
-        android:layout_below="@+id/textView9"
-        android:layout_alignLeft="@+id/EVENTO"
-        android:layout_alignStart="@+id/EVENTO" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="Bienvenida, por favor ingresa la información solicitada en cada uno de los campos. "
         android:id="@+id/textView7"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -84,40 +66,87 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ACTIVIDAD"
+        android:text="Quien reporta el evento: "
         android:id="@+id/textView8"
-        android:layout_marginTop="26dp"
-        android:layout_below="@+id/textView5"
-        android:layout_alignRight="@+id/textView5"
-        android:layout_alignEnd="@+id/textView5" />
-
-    <Spinner
-        android:layout_width="fill_parent"
-        android:layout_height="30dp"
-        android:id="@+id/ACTIVIDAD"
-        android:layout_alignBottom="@+id/textView8"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignLeft="@+id/editText4"
-        android:layout_alignStart="@+id/editText4" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="EVENTO"
-        android:id="@+id/textView9"
-        android:layout_marginTop="40dp"
-        android:layout_below="@+id/textView8"
-        android:layout_alignLeft="@+id/textView8"
-        android:layout_alignStart="@+id/textView8" />
+        android:layout_above="@+id/editText5"
+        android:layout_centerHorizontal="true" />
 
     <Spinner
         android:layout_width="fill_parent"
         android:layout_height="30dp"
         android:id="@+id/EVENTO"
-        android:layout_above="@+id/PROYECTO"
+        android:spinnerMode="dropdown"
+        android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/ACTIVIDAD"
         android:layout_alignStart="@+id/ACTIVIDAD" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROYECTO"
+        android:id="@+id/PROYECTO"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:id="@+id/PROYECTOS"
+        android:spinnerMode="dropdown"
+        android:layout_alignTop="@+id/PROYECTO"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EVENTO"
+        android:id="@+id/textView13"
+        android:layout_alignBottom="@+id/EVENTO"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText5"
+        android:layout_above="@+id/buttonfoto"
+        android:layout_marginBottom="29dp"
+        android:layout_alignRight="@+id/textClock"
+        android:layout_alignEnd="@+id/textClock"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACTIVIDAD"
+        android:id="@+id/textView11"
+        android:layout_above="@+id/EVENTO"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:id="@+id/ACTIVIDAD"
+        android:spinnerMode="dropdown"
+        android:layout_above="@+id/EVENTO"
+        android:layout_alignLeft="@+id/PROYECTOS"
+        android:layout_alignStart="@+id/PROYECTOS" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGUIENTE"
+        android:id="@+id/SIGUIENTE2"
+        android:layout_column="1"
+        android:onClick="SIGUIENTE2"
+        android:nestedScrollingEnabled="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>

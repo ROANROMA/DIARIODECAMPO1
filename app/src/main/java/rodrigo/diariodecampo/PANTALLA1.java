@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class PANTALLA1 extends AppCompatActivity {
 
@@ -12,6 +13,14 @@ public class PANTALLA1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pantalla1);
+        findViewById(R.id.SIGUIENTE).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(PANTALLA1.this, PANTALLA2.class));
+            }
+        });
+
+
     }
     public void  SIGUIENTE (View SIGUIENTE) {
         Intent intent = new Intent(this, PANTALLA2.class);
