@@ -12,7 +12,7 @@ public class PANTALLA3 extends AppCompatActivity {
     Spinner COMUNICACION;
     String [] DATOS1 ={"Visita","Telefonico","E-mail","Carata (Comunicacion Escrita)","Otras"};
 
-    Spinner ESTADO;
+    Spinner ESTADOLIST;
     String [] DATOS2 ={"Abierto","Cerrado","Seguimiento","Otras"};
 
     @Override
@@ -30,14 +30,13 @@ public class PANTALLA3 extends AppCompatActivity {
             }
         });
 
-        //  COMUNICACION = (Spinner) findViewById(R.id.COMUNICACION);
-        // ArrayAdapter <String> COMUNICA = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,DATOS1);
-        // COMUNICACION.setAdapter(COMUNICA);
+        COMUNICACION = (Spinner) findViewById(R.id.COMUNICACION);
+         ArrayAdapter <String> COMUNICA = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,DATOS1);
+         COMUNICACION.setAdapter(COMUNICA);
 
-        //  ESTADO = (Spinner) findViewById(R.id.ACTIVIDAD);
-        //  ArrayAdapter <String> ESTAD = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,DATOS2);
-        //  ESTADO.setAdapter(ESTAD);
-
+        ESTADOLIST = (Spinner) findViewById(R.id.ESTADOLIST);
+        ArrayAdapter <String> ESTADO = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,DATOS2);
+        ESTADOLIST.setAdapter(ESTADO);
 
     }
 

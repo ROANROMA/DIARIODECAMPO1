@@ -38,6 +38,12 @@ public class PANTALLA2 extends AppCompatActivity {
         PROYECTOS = (Spinner) findViewById(R.id.PROYECTOS);
         ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, DATOS);
         PROYECTOS.setAdapter(adaptador);
+        findViewById(R.id.SIGUIENTE2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(PANTALLA2.this, PANTALLA3.class));
+            }
+        });
 
     }
     public void  SIGUIENTE2 (View SIGUIENTE) {

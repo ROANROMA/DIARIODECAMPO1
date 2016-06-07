@@ -41,6 +41,15 @@
             android:name=".PANTAFOTO"
             android:label="@string/title_activity_pantafoto"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".PANTAMENU"
+            android:label="DIARIO DE CAMPO "
+            android:parentActivityName=".PANTAMENU">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PANTALLA2" />
+        </activity>
+
     </application>
 
 </manifest>

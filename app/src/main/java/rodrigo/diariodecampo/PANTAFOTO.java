@@ -55,7 +55,7 @@ public class PANTAFOTO extends AppCompatActivity {
         mOptionButton = (Button) findViewById(R.id.buttonfoto);
         mRlView = (RelativeLayout) findViewById(R.id.rl_view);
 
-        if(mayRequestStoragePermission())
+        if (mayRequestStoragePermission())
             mOptionButton.setEnabled(true);
         else
             mOptionButton.setEnabled(false);
@@ -65,6 +65,12 @@ public class PANTAFOTO extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 showOptions();
+            }
+        });
+        findViewById(R.id.button5).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(PANTAFOTO.this, PANTAMENU.class));
             }
         });
 
